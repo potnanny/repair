@@ -1,7 +1,7 @@
 # #############################################################################
 #
 # Repair potnanny sqlite db file if it becomes locked/corrupted
-# Usage: 
+# Usage:
 #   bash repair.bash
 #
 # #############################################################################
@@ -17,6 +17,6 @@ potnanny stop
 echo "replacing db file"
 mv $HOME/potnanny/potnanny.db $HOME/potnanny/potnanny.db.old
 mv $HOME/potnanny/new.db $HOME/potnanny/potnanny.db
+mv $HOME/potnanny/errors.log $HOME/potnanny/errors.repair
 
 potnanny start
-
