@@ -1,2 +1,2 @@
 # repair
-script to repair corrupted database file
+script to repair corrupted potnanny database file
